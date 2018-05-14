@@ -4,7 +4,7 @@ const facts =['He was the last Beatle to learn to drive', 'He was never a vegeta
 
 
 function theBeatlesPlay(musicians, instruments) {
-  let lineUp = [];
+  var lineUp = [];
   for (let i = 0; i > musicians.length; i++) {
   lineUp.push(`${musicians[i]} plays ${instruments[i]}`);
   }
@@ -12,9 +12,10 @@ function theBeatlesPlay(musicians, instruments) {
   }
 
 function johnLennonFacts(fact) {
-  let excitingFacts = [];
-  while (excitingFacts.length <= facts.length) {
-    excitingFacts.push(`${fact[0]} !!!`)
+  var excitingFacts = [];
+  let i = factIndex
+  while (i >= facts.length) {
+    excitingFacts.push(`${fact[i]} !!!`)
   }
   return;
 }

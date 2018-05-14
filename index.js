@@ -17,7 +17,6 @@ function johnLennonFacts(facts) {
   while (i<facts.length) {
     
     excitingFacts.push(`${facts[i++]} !!!`);
-    facts.length--;
   }
   return excitingFacts;
 }
